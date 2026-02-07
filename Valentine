@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine 💖</title>
+  < style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Great Vibes', cursive;
+      overflow: hidden;
+    }
+
+    .card {
+      background: white;
+      padding: 40px 50px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+      position: relative;
+    }
+
+    h1 {
+      font-size: 42px;
+      color: #e60073;
+      margin-bottom: 30px;
+    }
+
+    button {
+      font-size: 20px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px;
+    }
+
+    .yes {
+      background-color: #ff4d88;
+      color: white;
+    }
+
+    .no {
+      background-color: #ddd;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>
+      𝓦𝓲𝓵𝓵 𝔂𝓸𝓾 𝓫𝓮 𝓶𝔂 𝓥𝓪𝓵𝓮𝓷𝓽𝓲𝓷𝓮,<br>
+      𝓑𝓱𝓪𝔀𝓪𝓷𝓪 𝓛𝓪𝓭𝓭𝓱𝓪? 💖
+    </h1>
+
+    <button class="yes" onclick="yesClicked()">Yes 💕</button>
+    <button class="no" onmouseover="moveNo()">No 😅</button>
+  </div>
+
+  <script>
+    function yesClicked() {
+      alert("Yayyy 💖 You just made my heart smile!");
+    }
+
+    function moveNo() {
+      const btn = document.querySelector('.no');
+      btn.style.left = Math.random() * 80 + 'vw';
+      btn.style.top = Math.random() * 80 + 'vh';
+    }
+  </script>
+
+</body>
+</html>
